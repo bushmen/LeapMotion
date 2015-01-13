@@ -28,14 +28,14 @@ namespace Amber.Protos {
     #endregion
     
     #region Static variables
-    internal static pbd::MessageDescriptor internal__static_amber_SensorData__Descriptor;
-    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData, global::Amber.Protos.SensorData.Builder> internal__static_amber_SensorData__FieldAccessorTable;
-    internal static pbd::MessageDescriptor internal__static_amber_SensorData_AxisData__Descriptor;
-    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData.Types.AxisData, global::Amber.Protos.SensorData.Types.AxisData.Builder> internal__static_amber_SensorData_AxisData__FieldAccessorTable;
-    internal static pbd::MessageDescriptor internal__static_amber_DataRequest__Descriptor;
-    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.DataRequest, global::Amber.Protos.DataRequest.Builder> internal__static_amber_DataRequest__FieldAccessorTable;
-    internal static pbd::MessageDescriptor internal__static_amber_SubscribeAction__Descriptor;
-    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SubscribeAction, global::Amber.Protos.SubscribeAction.Builder> internal__static_amber_SubscribeAction__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_amber_ninedof_proto_SensorData__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData, global::Amber.Protos.SensorData.Builder> internal__static_amber_ninedof_proto_SensorData__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_amber_ninedof_proto_SensorData_AxisData__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData.Types.AxisData, global::Amber.Protos.SensorData.Types.AxisData.Builder> internal__static_amber_ninedof_proto_SensorData_AxisData__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_amber_ninedof_proto_DataRequest__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.DataRequest, global::Amber.Protos.DataRequest.Builder> internal__static_amber_ninedof_proto_DataRequest__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_amber_ninedof_proto_SubscribeAction__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SubscribeAction, global::Amber.Protos.SubscribeAction.Builder> internal__static_amber_ninedof_proto_SubscribeAction__FieldAccessorTable;
     #endregion
     #region Descriptor
     public static pbd::FileDescriptor Descriptor {
@@ -45,52 +45,49 @@ namespace Amber.Protos {
     
     static Ninedof() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
-          "Cg1uaW5lZG9mLnByb3RvEgVhbWJlchokZ29vZ2xlL3Byb3RvYnVmL2NzaGFy" + 
-          "cF9vcHRpb25zLnByb3RvGg9kcml2ZXJtc2cucHJvdG8i2QEKClNlbnNvckRh" + 
-          "dGESKQoFYWNjZWwYASABKAsyGi5hbWJlci5TZW5zb3JEYXRhLkF4aXNEYXRh" + 
-          "EigKBGd5cm8YAiABKAsyGi5hbWJlci5TZW5zb3JEYXRhLkF4aXNEYXRhEioK" + 
-          "Bm1hZ25ldBgDIAEoCzIaLmFtYmVyLlNlbnNvckRhdGEuQXhpc0RhdGESEQoJ" + 
-          "dGltZXN0YW1wGAQgASgNGjcKCEF4aXNEYXRhEg0KBXhBeGlzGAEgAigREg0K" + 
-          "BXlBeGlzGAIgAigREg0KBXpBeGlzGAMgAigRIjoKC0RhdGFSZXF1ZXN0Eg0K" + 
-          "BWFjY2VsGAEgASgIEgwKBGd5cm8YAiABKAgSDgoGbWFnbmV0GAMgASgIIkwK" + 
-          "D1N1YnNjcmliZUFjdGlvbhIMCgRmcmVxGAEgASgNEg0KBWFjY2VsGAIgASgI" + 
-          "EgwKBGd5cm8YAyABKAgSDgoGbWFnbmV0GAQgASgIOjcKCnNlbnNvckRhdGES" + 
-          "EC5hbWJlci5Ecml2ZXJNc2cYCiABKAsyES5hbWJlci5TZW5zb3JEYXRhOjkK" + 
-          "C2RhdGFSZXF1ZXN0EhAuYW1iZXIuRHJpdmVyTXNnGAsgASgLMhIuYW1iZXIu" + 
-          "RGF0YVJlcXVlc3Q6QQoPc3Vic2NyaWJlQWN0aW9uEhAuYW1iZXIuRHJpdmVy" + 
-          "TXNnGAwgASgLMhYuYW1iZXIuU3Vic2NyaWJlQWN0aW9uQhrCPhcKDEFtYmVy" + 
-          "LlByb3RvcxIHTmluZWRvZg==");
+          "Cg1uaW5lZG9mLnByb3RvEhNhbWJlci5uaW5lZG9mX3Byb3RvGg9kcml2ZXJt" + 
+          "c2cucHJvdG8igwIKClNlbnNvckRhdGESNwoFYWNjZWwYASABKAsyKC5hbWJl" + 
+          "ci5uaW5lZG9mX3Byb3RvLlNlbnNvckRhdGEuQXhpc0RhdGESNgoEZ3lybxgC" + 
+          "IAEoCzIoLmFtYmVyLm5pbmVkb2ZfcHJvdG8uU2Vuc29yRGF0YS5BeGlzRGF0" + 
+          "YRI4CgZtYWduZXQYAyABKAsyKC5hbWJlci5uaW5lZG9mX3Byb3RvLlNlbnNv" + 
+          "ckRhdGEuQXhpc0RhdGESEQoJdGltZXN0YW1wGAQgASgNGjcKCEF4aXNEYXRh" + 
+          "Eg0KBXhBeGlzGAEgAigREg0KBXlBeGlzGAIgAigREg0KBXpBeGlzGAMgAigR" + 
+          "IjoKC0RhdGFSZXF1ZXN0Eg0KBWFjY2VsGAEgASgIEgwKBGd5cm8YAiABKAgS" + 
+          "DgoGbWFnbmV0GAMgASgIIkwKD1N1YnNjcmliZUFjdGlvbhIMCgRmcmVxGAEg" + 
+          "ASgNEg0KBWFjY2VsGAIgASgIEgwKBGd5cm8YAyABKAgSDgoGbWFnbmV0GAQg" + 
+          "ASgIOkUKCnNlbnNvckRhdGESEC5hbWJlci5Ecml2ZXJNc2cYCiABKAsyHy5h" + 
+          "bWJlci5uaW5lZG9mX3Byb3RvLlNlbnNvckRhdGE6RwoLZGF0YVJlcXVlc3QS" + 
+          "EC5hbWJlci5Ecml2ZXJNc2cYCyABKAsyIC5hbWJlci5uaW5lZG9mX3Byb3Rv" + 
+          "LkRhdGFSZXF1ZXN0Ok8KD3N1YnNjcmliZUFjdGlvbhIQLmFtYmVyLkRyaXZl" + 
+          "ck1zZxgMIAEoCzIkLmFtYmVyLm5pbmVkb2ZfcHJvdG8uU3Vic2NyaWJlQWN0" + 
+          "aW9uQi4KHnBsLmVkdS5hZ2guYW1iZXIubmluZWRvZi5wcm90b0IMTmluZWRv" + 
+          "ZlByb3Rv");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
-        internal__static_amber_SensorData__Descriptor = Descriptor.MessageTypes[0];
-        internal__static_amber_SensorData__FieldAccessorTable = 
-            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData, global::Amber.Protos.SensorData.Builder>(internal__static_amber_SensorData__Descriptor,
+        internal__static_amber_ninedof_proto_SensorData__Descriptor = Descriptor.MessageTypes[0];
+        internal__static_amber_ninedof_proto_SensorData__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData, global::Amber.Protos.SensorData.Builder>(internal__static_amber_ninedof_proto_SensorData__Descriptor,
                 new string[] { "Accel", "Gyro", "Magnet", "Timestamp", });
-        internal__static_amber_SensorData_AxisData__Descriptor = internal__static_amber_SensorData__Descriptor.NestedTypes[0];
-        internal__static_amber_SensorData_AxisData__FieldAccessorTable = 
-            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData.Types.AxisData, global::Amber.Protos.SensorData.Types.AxisData.Builder>(internal__static_amber_SensorData_AxisData__Descriptor,
+        internal__static_amber_ninedof_proto_SensorData_AxisData__Descriptor = internal__static_amber_ninedof_proto_SensorData__Descriptor.NestedTypes[0];
+        internal__static_amber_ninedof_proto_SensorData_AxisData__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SensorData.Types.AxisData, global::Amber.Protos.SensorData.Types.AxisData.Builder>(internal__static_amber_ninedof_proto_SensorData_AxisData__Descriptor,
                 new string[] { "XAxis", "YAxis", "ZAxis", });
-        internal__static_amber_DataRequest__Descriptor = Descriptor.MessageTypes[1];
-        internal__static_amber_DataRequest__FieldAccessorTable = 
-            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.DataRequest, global::Amber.Protos.DataRequest.Builder>(internal__static_amber_DataRequest__Descriptor,
+        internal__static_amber_ninedof_proto_DataRequest__Descriptor = Descriptor.MessageTypes[1];
+        internal__static_amber_ninedof_proto_DataRequest__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.DataRequest, global::Amber.Protos.DataRequest.Builder>(internal__static_amber_ninedof_proto_DataRequest__Descriptor,
                 new string[] { "Accel", "Gyro", "Magnet", });
-        internal__static_amber_SubscribeAction__Descriptor = Descriptor.MessageTypes[2];
-        internal__static_amber_SubscribeAction__FieldAccessorTable = 
-            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SubscribeAction, global::Amber.Protos.SubscribeAction.Builder>(internal__static_amber_SubscribeAction__Descriptor,
+        internal__static_amber_ninedof_proto_SubscribeAction__Descriptor = Descriptor.MessageTypes[2];
+        internal__static_amber_ninedof_proto_SubscribeAction__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.SubscribeAction, global::Amber.Protos.SubscribeAction.Builder>(internal__static_amber_ninedof_proto_SubscribeAction__Descriptor,
                 new string[] { "Freq", "Accel", "Gyro", "Magnet", });
         global::Amber.Protos.Ninedof.SensorData = pb::GeneratedSingleExtension<global::Amber.Protos.SensorData>.CreateInstance(global::Amber.Protos.Ninedof.Descriptor.Extensions[0]);
         global::Amber.Protos.Ninedof.DataRequest = pb::GeneratedSingleExtension<global::Amber.Protos.DataRequest>.CreateInstance(global::Amber.Protos.Ninedof.Descriptor.Extensions[1]);
         global::Amber.Protos.Ninedof.SubscribeAction = pb::GeneratedSingleExtension<global::Amber.Protos.SubscribeAction>.CreateInstance(global::Amber.Protos.Ninedof.Descriptor.Extensions[2]);
-        pb::ExtensionRegistry registry = pb::ExtensionRegistry.CreateInstance();
-        RegisterAllExtensions(registry);
-        global::Google.ProtocolBuffers.DescriptorProtos.CSharpOptions.RegisterAllExtensions(registry);
-        global::Amber.Protos.AmberProto.RegisterAllExtensions(registry);
-        return registry;
+        return null;
       };
       pbd::FileDescriptor.InternalBuildGeneratedFileFrom(descriptorData,
           new pbd::FileDescriptor[] {
-          global::Google.ProtocolBuffers.DescriptorProtos.CSharpOptions.Descriptor, 
-          global::Amber.Protos.AmberProto.Descriptor, 
+          global::Amber.Protos.Drivermsg.Descriptor, 
           }, assigner);
     }
     #endregion
@@ -116,11 +113,11 @@ namespace Amber.Protos {
     }
     
     public static pbd::MessageDescriptor Descriptor {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_SensorData__Descriptor; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SensorData__Descriptor; }
     }
     
     protected override pb::FieldAccess.FieldAccessorTable<SensorData, SensorData.Builder> InternalFieldAccessors {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_SensorData__FieldAccessorTable; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SensorData__FieldAccessorTable; }
     }
     
     #region Nested types
@@ -145,11 +142,11 @@ namespace Amber.Protos {
         }
         
         public static pbd::MessageDescriptor Descriptor {
-          get { return global::Amber.Protos.Ninedof.internal__static_amber_SensorData_AxisData__Descriptor; }
+          get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SensorData_AxisData__Descriptor; }
         }
         
         protected override pb::FieldAccess.FieldAccessorTable<AxisData, AxisData.Builder> InternalFieldAccessors {
-          get { return global::Amber.Protos.Ninedof.internal__static_amber_SensorData_AxisData__FieldAccessorTable; }
+          get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SensorData_AxisData__FieldAccessorTable; }
         }
         
         public const int XAxisFieldNumber = 1;
@@ -967,11 +964,11 @@ namespace Amber.Protos {
     }
     
     public static pbd::MessageDescriptor Descriptor {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_DataRequest__Descriptor; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_DataRequest__Descriptor; }
     }
     
     protected override pb::FieldAccess.FieldAccessorTable<DataRequest, DataRequest.Builder> InternalFieldAccessors {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_DataRequest__FieldAccessorTable; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_DataRequest__FieldAccessorTable; }
     }
     
     public const int AccelFieldNumber = 1;
@@ -1323,11 +1320,11 @@ namespace Amber.Protos {
     }
     
     public static pbd::MessageDescriptor Descriptor {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_SubscribeAction__Descriptor; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SubscribeAction__Descriptor; }
     }
     
     protected override pb::FieldAccess.FieldAccessorTable<SubscribeAction, SubscribeAction.Builder> InternalFieldAccessors {
-      get { return global::Amber.Protos.Ninedof.internal__static_amber_SubscribeAction__FieldAccessorTable; }
+      get { return global::Amber.Protos.Ninedof.internal__static_amber_ninedof_proto_SubscribeAction__FieldAccessorTable; }
     }
     
     public const int FreqFieldNumber = 1;

@@ -58,10 +58,10 @@
     <Compile Include="Amber\MessageHandler.cs" />
     <Compile Include="Drivers\NinedofProxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="proto\AmberProto.cs" />
+    <Compile Include="Drivers\RoboclawProxy.cs" />
+    <Compile Include="proto\Drivermsg.cs" />
     <Compile Include="proto\Ninedof.cs" />
     <Compile Include="proto\Roboclaw.cs" />
-    <Compile Include="Drivers\RoboclawProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -19,17 +19,17 @@ namespace Amber.Protos {
     }
     #endregion
     #region Extensions
-    public const int MotorsCommandFieldNumber = 10;
+    public const int MotorsCommandFieldNumber = 20;
     public static pb::GeneratedExtensionBase<global::Amber.Protos.MotorsSpeed> MotorsCommand;
-    public const int CurrentSpeedRequestFieldNumber = 11;
+    public const int CurrentSpeedRequestFieldNumber = 21;
     public static pb::GeneratedExtensionBase<bool> CurrentSpeedRequest;
-    public const int CurrentSpeedFieldNumber = 12;
+    public const int CurrentSpeedFieldNumber = 22;
     public static pb::GeneratedExtensionBase<global::Amber.Protos.MotorsSpeed> CurrentSpeed;
     #endregion
     
     #region Static variables
-    internal static pbd::MessageDescriptor internal__static_amber_MotorsSpeed__Descriptor;
-    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.MotorsSpeed, global::Amber.Protos.MotorsSpeed.Builder> internal__static_amber_MotorsSpeed__FieldAccessorTable;
+    internal static pbd::MessageDescriptor internal__static_amber_roboclaw_proto_MotorsSpeed__Descriptor;
+    internal static pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.MotorsSpeed, global::Amber.Protos.MotorsSpeed.Builder> internal__static_amber_roboclaw_proto_MotorsSpeed__FieldAccessorTable;
     #endregion
     #region Descriptor
     public static pbd::FileDescriptor Descriptor {
@@ -39,34 +39,30 @@ namespace Amber.Protos {
     
     static Roboclaw() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
-          "Cg5yb2JvY2xhdy5wcm90bxIFYW1iZXIaJGdvb2dsZS9wcm90b2J1Zi9jc2hh" + 
-          "cnBfb3B0aW9ucy5wcm90bxoPZHJpdmVybXNnLnByb3RvIm0KC01vdG9yc1Nw" + 
-          "ZWVkEhYKDmZyb250TGVmdFNwZWVkGAEgASgFEhcKD2Zyb250UmlnaHRTcGVl" + 
-          "ZBgCIAEoBRIVCg1yZWFyTGVmdFNwZWVkGAMgASgFEhYKDnJlYXJSaWdodFNw" + 
-          "ZWVkGAQgASgFOjsKDW1vdG9yc0NvbW1hbmQSEC5hbWJlci5Ecml2ZXJNc2cY" + 
-          "CiABKAsyEi5hbWJlci5Nb3RvcnNTcGVlZDotChNjdXJyZW50U3BlZWRSZXF1" + 
-          "ZXN0EhAuYW1iZXIuRHJpdmVyTXNnGAsgASgIOjoKDGN1cnJlbnRTcGVlZBIQ" + 
-          "LmFtYmVyLkRyaXZlck1zZxgMIAEoCzISLmFtYmVyLk1vdG9yc1NwZWVkQhvC" + 
-          "PhgKDEFtYmVyLlByb3RvcxIIUm9ib2NsYXc=");
+          "Cg5yb2JvY2xhdy5wcm90bxIUYW1iZXIucm9ib2NsYXdfcHJvdG8aD2RyaXZl" + 
+          "cm1zZy5wcm90byJtCgtNb3RvcnNTcGVlZBIWCg5mcm9udExlZnRTcGVlZBgB" + 
+          "IAEoBRIXCg9mcm9udFJpZ2h0U3BlZWQYAiABKAUSFQoNcmVhckxlZnRTcGVl" + 
+          "ZBgDIAEoBRIWCg5yZWFyUmlnaHRTcGVlZBgEIAEoBTpKCg1tb3RvcnNDb21t" + 
+          "YW5kEhAuYW1iZXIuRHJpdmVyTXNnGBQgASgLMiEuYW1iZXIucm9ib2NsYXdf" + 
+          "cHJvdG8uTW90b3JzU3BlZWQ6LQoTY3VycmVudFNwZWVkUmVxdWVzdBIQLmFt" + 
+          "YmVyLkRyaXZlck1zZxgVIAEoCDpJCgxjdXJyZW50U3BlZWQSEC5hbWJlci5E" + 
+          "cml2ZXJNc2cYFiABKAsyIS5hbWJlci5yb2JvY2xhd19wcm90by5Nb3RvcnNT" + 
+          "cGVlZEIwCh9wbC5lZHUuYWdoLmFtYmVyLnJvYm9jbGF3LnByb3RvQg1Sb2Jv" + 
+          "Y2xhd1Byb3Rv");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
-        internal__static_amber_MotorsSpeed__Descriptor = Descriptor.MessageTypes[0];
-        internal__static_amber_MotorsSpeed__FieldAccessorTable = 
-            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.MotorsSpeed, global::Amber.Protos.MotorsSpeed.Builder>(internal__static_amber_MotorsSpeed__Descriptor,
+        internal__static_amber_roboclaw_proto_MotorsSpeed__Descriptor = Descriptor.MessageTypes[0];
+        internal__static_amber_roboclaw_proto_MotorsSpeed__FieldAccessorTable = 
+            new pb::FieldAccess.FieldAccessorTable<global::Amber.Protos.MotorsSpeed, global::Amber.Protos.MotorsSpeed.Builder>(internal__static_amber_roboclaw_proto_MotorsSpeed__Descriptor,
                 new string[] { "FrontLeftSpeed", "FrontRightSpeed", "RearLeftSpeed", "RearRightSpeed", });
         global::Amber.Protos.Roboclaw.MotorsCommand = pb::GeneratedSingleExtension<global::Amber.Protos.MotorsSpeed>.CreateInstance(global::Amber.Protos.Roboclaw.Descriptor.Extensions[0]);
         global::Amber.Protos.Roboclaw.CurrentSpeedRequest = pb::GeneratedSingleExtension<bool>.CreateInstance(global::Amber.Protos.Roboclaw.Descriptor.Extensions[1]);
         global::Amber.Protos.Roboclaw.CurrentSpeed = pb::GeneratedSingleExtension<global::Amber.Protos.MotorsSpeed>.CreateInstance(global::Amber.Protos.Roboclaw.Descriptor.Extensions[2]);
-        pb::ExtensionRegistry registry = pb::ExtensionRegistry.CreateInstance();
-        RegisterAllExtensions(registry);
-        global::Google.ProtocolBuffers.DescriptorProtos.CSharpOptions.RegisterAllExtensions(registry);
-        global::Amber.Protos.AmberProto.RegisterAllExtensions(registry);
-        return registry;
+        return null;
       };
       pbd::FileDescriptor.InternalBuildGeneratedFileFrom(descriptorData,
           new pbd::FileDescriptor[] {
-          global::Google.ProtocolBuffers.DescriptorProtos.CSharpOptions.Descriptor, 
-          global::Amber.Protos.AmberProto.Descriptor, 
+          global::Amber.Protos.Drivermsg.Descriptor, 
           }, assigner);
     }
     #endregion
@@ -92,11 +88,11 @@ namespace Amber.Protos {
     }
     
     public static pbd::MessageDescriptor Descriptor {
-      get { return global::Amber.Protos.Roboclaw.internal__static_amber_MotorsSpeed__Descriptor; }
+      get { return global::Amber.Protos.Roboclaw.internal__static_amber_roboclaw_proto_MotorsSpeed__Descriptor; }
     }
     
     protected override pb::FieldAccess.FieldAccessorTable<MotorsSpeed, MotorsSpeed.Builder> InternalFieldAccessors {
-      get { return global::Amber.Protos.Roboclaw.internal__static_amber_MotorsSpeed__FieldAccessorTable; }
+      get { return global::Amber.Protos.Roboclaw.internal__static_amber_roboclaw_proto_MotorsSpeed__FieldAccessorTable; }
     }
     
     public const int FrontLeftSpeedFieldNumber = 1;
